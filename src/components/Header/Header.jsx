@@ -1,22 +1,15 @@
 import React from 'react';
+import SearchBar from '../SearchBar/SearchBar';
+import CartButton from '../CartButton/CartButton';
+
+import './Header.css';
 
 function Header() {
   return (
     <header className='header'>
       <div className='container'>
-
-        <form>
-          <input
-            type='search'
-            placeholder='Buscar produtos'
-            className='search__input'
-            required/>
-
-            <button type='submit' className='search__button'>
-              icone
-            </button>
-        </form>
-
+        <SearchBar />
+        <CartButton />
       </div>
     </header>
   );
